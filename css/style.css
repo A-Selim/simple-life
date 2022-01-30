@@ -1,0 +1,273 @@
+/* ==== Global Selectors ==== */
+body {
+    font-family: "Ubuntu", sans-serif;
+    margin: 0;
+}
+
+h1,
+h2,
+h3 {
+    margin: 0;
+    font-family: "Lora", serif;
+}
+
+.container {
+    padding: 0 1em;
+}
+
+img {
+    width: 100%;
+    display: block;
+}
+
+/* ==== Header ==== */
+/* Logo Typography */
+h1 {
+    font-size: 2rem;
+    font-weight: 300;
+    color: #143774;
+}
+
+.logo-text {
+    font-size: 0.75rem;
+    font-weight: 700;
+    color: #1792d2;
+    letter-spacing: 0.26em;
+    margin: 0;
+}
+
+/* Navigation Typography */
+.nav-item {
+    font-size: 1rem;
+    font-weight: 700;
+    letter-spacing: 0.1em;
+    color: #717171;
+    text-decoration: none;
+}
+
+.nav-item:hover,
+.nav-item:focus {
+    color: #1792d2;
+}
+
+/* Header Layout */
+header {
+    background: #f8f8f8;
+    padding: 3em 0;
+    margin-bottom: 4em;
+}
+
+.container-flex {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.logo {
+    margin: 1em 0 2em;
+}
+
+.nav-item {
+    margin: 1em;
+    padding-bottom: 0.3em;
+}
+
+.active-page {
+    border-bottom: 3px solid #707070;
+}
+
+/* ==== Articles ==== */
+/* Articles Typography */
+.articles {
+    color: #707070;
+}
+
+.article-info {
+    font-size: 0.87rem;
+    font-weight: 300;
+}
+
+.article-title {
+    font-size: 1.5rem;
+    font-weight: 300;
+    color: #143774;
+}
+
+.article-subtitle {
+    font-size: 1.3rem;
+    font-weight: 300;
+    color: #1792D2;
+}
+
+.article-body {
+    font-size: 1.125rem;
+    font-weight: 300;
+    line-height: 1.4;
+    text-align: justify;
+}
+
+.articles a {
+    color: #1792d2;
+}
+
+.articles a:hover,
+.articles a:focus {
+    color: #717171;
+}
+
+.article-read-link {
+    font-size: 1rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+    text-decoration: none;
+}
+
+/* Articles Layout */
+.article-featured {
+    padding-bottom: 2.5em;
+    border-bottom: 3px solid #707070;
+    margin-bottom: 3em;
+}
+
+.article-small-view {
+    margin-bottom: 4em;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.article-full {
+    margin-bottom: 6em;
+}
+
+.article-full .article-image {
+    margin-bottom: 2em;
+}
+
+/* ==== Widgets ==== */
+/* Widgets Typography */
+.widgets {
+    color: #143774;
+}
+
+.widget-title {
+    font-family: "Ubuntu", sans-serif;
+    font-size: 1.5rem;
+    font-weight: 700;
+    letter-spacing: 0.1em;
+    margin-bottom: 1em;
+}
+
+.widget-body {
+    font-size: 0.875rem;
+    font-weight: 300;
+}
+
+.widget-link {
+    font-size: 1.125rem;
+    font-family: "Lora", serif;
+    color: #143774;
+    text-decoration: none;
+}
+
+/* Widgets Layout */
+.about-me,
+.recent-posts {
+    border: 20px solid #ebebeb;
+    margin-bottom: 3em;
+    padding: 1em;
+}
+
+.widget {
+    margin-bottom: 4em;
+    padding-bottom: 2em;
+    border-bottom: 1px solid #707070;
+}
+
+.widget:last-child {
+    padding-bottom: 0;
+    border-bottom: none;
+}
+
+.widget-image {
+    margin-bottom: 1em;
+}
+
+/* ==== Footer ==== */
+footer {
+    background: #143774;
+    color: #ffffff;
+    text-align: center;
+    padding: 4em;
+    font-size: 1.125rem;
+}
+
+.footer-name {
+    font-weight: 700;
+}
+
+.footer-copyright {
+    font-weight: 300;
+}
+
+@media (min-width: 756px) {
+    /* Header Layoout */
+    .logo,
+    .nav-item {
+        margin: 0 1em 0 0;
+    }
+
+    .nav-item:last-child {
+        margin-right: 0;
+    }
+
+    .container {
+        max-width: 960px;
+        margin: 0 auto;
+    }
+
+    .container-flex {
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    /* Articles Layout */
+    .article-image,
+    .article-info {
+        margin-bottom: 3em;
+    }
+
+    .article-left-side {
+        width: 30%;
+        margin: 0;
+    }
+
+    .article-right-side {
+        width: 67%;
+        margin: 0;
+    }
+
+    .article-left-side .article-image {
+        height: 250px;
+        object-fit: cover;
+        margin-bottom: 1em;
+    }
+
+    main .container-flex {
+        align-items: flex-start;
+    }
+
+    .articles {
+        width: 70%;
+    }
+
+    .widgets {
+        width: 25%;
+    }
+    /* image size in about-me page */
+    .article-full .article-image {
+        height: 300px;
+        object-fit: cover;
+    }
+}
